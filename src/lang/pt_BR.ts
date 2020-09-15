@@ -1,187 +1,188 @@
 /**
- * This file is part of the vscode-deploy-reloaded distribution.
+ * Este arquivo é parte da distribuição de vscode-deploy-reloaded.
  * Copyright (c) Marcel Joachim Kloubert.
  * 
- * vscode-deploy-reloaded is free software: you can redistribute it and/or modify  
- * it under the terms of the GNU Lesser General Public License as   
- * published by the Free Software Foundation, version 3.
+ * vscode-deploy-reloaded um software livre: você pode redistribuí-lo e ou
+ * modificá-lo nos termos da da licença pública GNU como publicado pela
+ * Free Software Foundation, versão 3.
  *
- * vscode-deploy-reloaded is distributed in the hope that it will be useful, but 
- * WITHOUT ANY WARRANTY; without even the implied warranty of 
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
- * Lesser General Public License for more details.
+ * O vscode-deploy-reloaded é distribuído na expectativa de ser útil, mas 
+ * SEM QUALQUER GARANTIA; até mesmo a sem a garantia COMERCIALIZAÇÃO
+ * ou ADEQUAÇÃO A UM DETERMINADO FIM.
+ * 
+ * Veja a licença GNU Licença Pública Geral Menor  para mais detalhes
  *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ * Você deve ter recebido uma cṕida da GNU Licença Pública Geral Menor juntamente 
+ * com este programa. Caso não, acesse <http://www.gnu.org/licenses/>.
  */
 
 import { Translation } from '../i18';
 
 
-// english
+// Português do Brasil
 // 
-// Translated by: Marcel Joachim Kloubert (https://github.com/mkloubert)
+// Traduzido por: Marcos Alexandre Matos Marques (https://github.com/manalista)
 export const translation: Translation = {
     apis: {
         errors: {
-            couldNotRegister: "Could not register API host for port{0:trim,leading_space}:{1:trim,surround,leading_space}",
-            failed: "API host operation failed:{0:trim,surround,leading_space}",
+            couldNotRegister: "Não foi possivel registrar o 'host' de API na porta{0:trim,leading_space}:{1:trim,surround,leading_space}",
+            failed: "Operação falhou no 'host' de API:{0:trim,surround,leading_space}",
         },
-        noneFound: "No API hosts found!",
-        selectHost: "Select an API host ...",
-        startHost: "Start API host ...",
-        stopHost: "Stop API host ...",
+        noneFound: "Nenhum 'host' de API encontrado!",
+        selectHost: "Selecione um 'host' de API ...",
+        startHost: "Iniciar 'host' de API ...",
+        stopHost: "Parar 'host' de API ...",
     },
-    cancel: "Cancel",
-    canceled: "Canceled",
-    changelog: "Changelog",
-    close: "Close",
+    cancel: "Cancelar",
+    canceled: "Cancelado",
+    changelog: "Registro de mudanças",
+    close: "Fechar",
     commands: {
-        executionError: "Could not execute command{0:surround,leading_space}:{1:trim,surround,leading_space}",
-        scriptNotFound: "{0:surround} script not found!",
+        executionError: "Não foi possível executar o comando{0:surround,leading_space}:{1:trim,surround,leading_space}",
+        scriptNotFound: "{0:surround} 'script' não encontrado!",
     },
     compare: {
         currentFile: {
-            description: "Compares the current file with a remote one",
-            failed: "Could not compare current file:{0:trim,surround,leading_space}",
-            label: "Current file ...",
+            description: "Compara o arquivo atual com outro remoto",
+            failed: "Não foi possível comparar o arquivo atual:{0:trim,surround,leading_space}",
+            label: "Arquivo atual ...",
         },
         errors: {
-            operationFailed: "Compare operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            operationFailed: "Operação de comparação falhou (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
         },
         title: "Diff{0:trim,surround,leading_space}",
     },
     compilers: {
         errors: {
-            couldNotDeleteSourceFile: "Could not delete source file:{0:trim,surround,leading_space}",
+            couldNotDeleteSourceFile: "Não foi possível excluir o arquivo de origem:{0:trim,surround,leading_space}",
         },
-        notSupported: "Compiler{0:trim,surround,leading_space} is not supported!",
+        notSupported: "O compilador{0:trim,surround,leading_space} não é suportado!",
     },
-    'continue': "Continue",
+    'continue': "Continuar",
     credentials: {
-        enterPassphrase: "Enter the passphrase ...",
-        enterPassword: "Enter the password ...",
-        enterUsername: "Enter the name of the user ...",
+        enterPassphrase: "Informe a 'passphrase' ...",
+        enterPassword: "Informe a senha ...",
+        enterUsername: "Informe o nome de usuário ...",
     },
     currentFileOrFolder: {
-        noneSelected: "There is current no active file or folder selected!",
+        noneSelected: "Não há arquivo ou pasta ativo selecionado!",
     },
     DELETE: {
-        askIfDeleteLocalFile: "Also delete local file?",
-        askIfDeleteLocalFiles: "Also delete local files?",
-        canceledByOperation: "Deleting files in{0:trim,surround,leading_space} has been cancelled by target operation.",
+        askIfDeleteLocalFile: "Excluir o arquivo local também?",
+        askIfDeleteLocalFiles: "Excluir os arquivos locais também?",
+        canceledByOperation: "Exclusão de arquivos em{0:trim,surround,leading_space} foi cancelada pelo alvo da operação.",
         currentFile: {
-            description: "Deletes the current file",
-            label: "Current file ...",
+            description: "Exclui o arquivo atual",
+            label: "Arquivo atual ...",
         },
         currentFileOrFolder: {
             file: {
-                description: "Deletes the current selected file",
-                label: "Delete selected file",
+                description: "Exclui o arquivo atualmente selecionado",
+                label: "Excluir arquivo selecionado",
             },
             folder: {
-                description: "Deletes all files of the selected folder",
-                label: "Delete selected folder",
+                description: "Exclui todos os arquivos da pasta selecionada",
+                label: "Excluir pasta selecionada",
             },
             items: {
-                description: "Deletes all files of the selected items",
-                label: "Delete selected items",
+                description: "Excluir todos os arquivos dos ítens selecionados",
+                label: "Excluir itens selecionados",
             }
         },
-        deletingFile: "Deleting file{0:trim,surround,leading_space} in{1:trim,surround,leading_space} ...",
-        deletingFiles: "Deleting files ...",
+        deletingFile: "Excluíndo arquivo {0:trim,surround,leading_space} in{1:trim,surround,leading_space} ...",
+        deletingFiles: "Excluído arquivos ...",
         errors: {
-            invalidWorkspace: "File{0:trim,surround,leading_space} is not part of workspace{1:trim,surround,leading_space}!",
-            invalidWorkspaceForPackage: "Package{0:trim,surround,leading_space} is not part of workspace{1:trim,surround,leading_space}!",
-            operationFailed: "Delete operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            invalidWorkspace: "Arquivo{0:trim,surround,leading_space} não é parte do 'workspace'{1:trim,surround,leading_space}!",
+            invalidWorkspaceForPackage: "Pacote{0:trim,surround,leading_space} não é parte do 'workspace'{1:trim,surround,leading_space}!",
+            operationFailed: "Operação de exclusão falhou (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
         },
         finishedButton: {
-            text: "Delete operation finished ({0:trim,ending_space}ms)",
-            tooltip: "Click here to open output ...",
+            text: "Operação de exclusão finalizada ({0:trim,ending_space}ms)",
+            tooltip: "Clique aqui para abrir a saída ...",
         },
-        finishedOperation: "Deleting files in{0:trim,surround,leading_space} has been finished.",
-        finishedOperationWithErrors: "[ERROR] Could not delete files in{0:trim,surround,leading_space}:{1:trim,surround,leading_space}",
+        finishedOperation: "A exclusão dos arquivos em{0:trim,surround,leading_space} foi concluída.",
+        finishedOperationWithErrors: "[ERRO] Não foi possível excluir os arquivos em{0:trim,surround,leading_space}:{1:trim,surround,leading_space}",
         fileList: {
-            description: "Deletes files, which are defined as list in the active text editor",
-            label: "File list",
+            description: "Excluir arquivos, que estão definidos como lista no editor de texto ativo",
+            label: "Lista de arquivos",
         },
         onChange: {
-            activated: "Remove on change has been activated for workspace{0:trim,surround,leading_space}.",
+            activated: "Remoção ao alterar foi ativado para o 'workspace'{0:trim,surround,leading_space}.",
             button: {
-                text: "Remove on change",
-                tooltip: "Click here to activate or deactivate 'remove on change' ..."
+                text: "Remover ao alterar",
+                tooltip: "Clique aqui para ativar ou desativar 'remoção ao alterar' ..."
             },
-            failed: "Remove on change for{0:trim,surround,leading_space} in{1:trim,surround,leading_space} failed:{2:trim,surround,leading_space}",
-            text: "Remove on change",
-            waitingBeforeActivate: "Remove on change is deactivated for about{0:trim,leading_space} seconds for workspace{1:trim,surround,leading_space}.",
+            failed: "Remoção ao alterar para{0:trim,surround,leading_space} em{1:trim,surround,leading_space} falhou:{2:trim,surround,leading_space}",
+            text: "Remover ao alterar",
+            waitingBeforeActivate: "Remoção ao alterar está dasetivada por cerca de{0:trim,leading_space} segundos para o 'workspace'{1:trim,surround,leading_space}.",
         },
         package: {
-            description: "Deletes the files of a package",
-            label: "Package ...",
+            description: "Exclui todos os arquivos de um pacote",
+            label: "Pacote ...",
         },
         popups: {
-            allFailed: "None of the{0:trim,leading_space} files could be deleted!",
-            fileFailed: "The file{0:trim,surround,leading_space} could not be deleted!",
-            fileSucceeded: "The file{0:trim,surround,leading_space} has been deleted.",
-            someFailed: "{0:trim,ending_space}of {1:trim,ending_space}files could not be deleted!",
-            succeeded: "Total of {0:trim,ending_space}files have been deleted.",
+            allFailed: "Nenhum dos{0:trim,leading_space} arquivos pode ser excluído!",
+            fileFailed: "O arquivo{0:trim,surround,leading_space} não pode ser excluído!",
+            fileSucceeded: "O arquivo{0:trim,surround,leading_space} foi excluído.",
+            someFailed: "{0:trim,ending_space}of {1:trim,ending_space}arquivos não puderam ser excluídos!",
+            succeeded: "Total de {0:trim,ending_space}arquvios foram excluídos.",
         },
-        selectTarget: "Select the target where to delete ...",
-        startOperation: "Start deleting files in{0:trim,surround,leading_space} ...",
+        selectTarget: "Selecione o destino de onde excluir ...",
+        startOperation: "Iniciar exclusão de arquivos em{0:trim,surround,leading_space} ...",
     },
     deploy: {
         allOpenFiles: {
-            description: "Deploys the files of all opened text editors",
-            label: "All open files ...",
+            description: "Implanta os arquivos de todos os editores de texto abertos",
+            label: "Todos os arquivos abertos ...",
         },
-        askForCancelOperation: "You are about to cancel the deploy operation to{0:trim,surround,leading_space}. Are you sure?",
-        canceledByOperation: "Deploying files to{0:trim,surround,leading_space} has been cancelled by target operation.",
+        askForCancelOperation: "Você está prestes a cancelar a operação de implantação para{0:trim,surround,leading_space}. Você tem certeza?",
+        canceledByOperation: "A implantação dos arquivos para{0:trim,surround,leading_space} foi cancelada pelo alvo da operação.",
         checkBeforeDeploy: {
-            beginOperation: "Check for newer files in{0:trim,surround,leading_space} ...",
-            newerFilesFound: "{0:trim,ending_space}files was/were found, which is/are newer. Continue?",
-            notSupported: "'checkBeforeDeploy' is not supported for target{0:trim,surround,leading_space}! Continue?",
+            beginOperation: "Verificar por novos arquivos em{0:trim,surround,leading_space} ...",
+            newerFilesFound: "{0:trim,ending_space}arquivos foram encontrados, os quais são mais novos. Continuar?",
+            notSupported: "'checkBeforeDeploy' não é suportado no destino{0:trim,surround,leading_space}! Continuar?",
             report: {
-                lastChange: "Last change",
-                localFile: "Local file",
-                remoteFile: "Remote file",
-                size: "Size",
-                title: "Newer files in{0:trim,surround,leading_space}",
+                lastChange: "Última modificação",
+                localFile: "Arquivo local",
+                remoteFile: "Arquivo remoto",
+                size: "Tamenho",
+                title: "Arquivos mais novos em{0:trim,surround,leading_space}",
             },
         },        
         currentFile: {
-            description: "Deploys the current file",
-            label: "Current file ...",
+            description: "Implanta o arquivo atual",
+            label: "Arquivo atual ...",
         },
         currentFileOrFolder: {
             file: {
-                description: "Deploys the current selected file",
-                label: "Deploy selected file",
+                description: "Implanta o arquivo atualmente selecionado",
+                label: "Implantar arquivo selecionado",
             },
             folder: {
-                description: "Deploys all files of the selected folder",
-                label: "Deploy selected folder",
+                description: "Implanta todos os arquivos da pasta selecionada",
+                label: "Implantar pasta selecionada",
             },
             items: {
-                description: "Deploys all files of the selected items",
-                label: "Deploy selected items",
+                description: "Implanta todos os arquivos do item selecionado",
+                label: "Implantar itens selecionados",
             }
         },
-        deployingFile: "Deploying file{0:trim,surround,leading_space} to{1:trim,surround,leading_space} ...",
-        deployingFiles: "Deploying files ...",
+        deployingFile: "Implantando arquivo{0:trim,surround,leading_space} to{1:trim,surround,leading_space} ...",
+        deployingFiles: "Implantando arquivos ...",
         fileList: {
-            description: "Deploys files, which are defined as list in the active text editor",
-            label: "File list",
+            description: "Implanta arquivos, os quais estão definidos como uma lista no editor de texto ativo",
+            label: "Lista de arquivos",
         },
         finishedButton: {
-            text: "Deploy operation finished ({0:trim,ending_space}ms)",
-            tooltip: "Click here to open output ...",
+            text: "Operação de implantação finalizada ({0:trim,ending_space}ms)",
+            tooltip: "Clique aqui para abrir a saída ...",
         },
-        finishedOperation: "Deploying files to{0:trim,surround,leading_space} has been finished.",
-        finishedOperationWithErrors: "[ERROR] Could not deploy files to{0:trim,surround,leading_space}:{1:trim,surround,leading_space}",
+        finishedOperation: "Implantação de arquivos para{0:trim,surround,leading_space} foi finalizada.",
+        finishedOperationWithErrors: "[ERRO] Não foi possível implantar arquivos para{0:trim,surround,leading_space}:{1:trim,surround,leading_space}",
         errors: {
             invalidWorkspace: "Cannot deploy file{0:trim,surround,leading_space} from workspace{1:trim,surround,leading_space}!",
             invalidWorkspaceForPackage: "Cannot deploy package{0:trim,surround,leading_space} from workspace{1:trim,surround,leading_space}!",
-            operationFailed: "Deploy operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            operationFailed: "Deploy operation failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
             operationToTargetFailed: "Deploying to target{0:trim,surround,leading_space} failed:{1:trim,surround,leading_space}",
         },
         gitCommit: {
@@ -278,9 +279,9 @@ export const translation: Translation = {
         copyPathToClipboard: {
             description: "Copies the current path to clipboard",
             errors: {
-                failed: "Could not save path to clipboard (s. debug console 'CTRL/CMD + SHIFT + Y'): {0}",
+                failed: "Could not save path to clipboard (veja o console de depuração 'CTRL/CMD + SHIFT + Y'): {0}",
             },
-            label: "Copy path ...",
+            label: "Copiar caminho ...",
         },
         currentDirectory: "Current directory:{0:trim,surround,leading_space} ({1:trim,surround})",
         currentFileOrFolder: {
@@ -297,7 +298,7 @@ export const translation: Translation = {
         directoryIsEmpty: "(directory is empty)",
         errors: {
             failed: "Could not list directory{0:trim,surround,leading_space} ({1:trim,surround,leading_space}): {2:trim,surround,leading_space}",
-            operationFailed: "List directory operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            operationFailed: "List directory operation failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
         },
         lastModified: "Last modified:{0:trim,leading_space}",
         loading: "Loading directory{0:trim,surround,leading_space} ...",
@@ -328,29 +329,29 @@ export const translation: Translation = {
             removing: "Removing folder{0:trim,surround,leading_space} ...",
         },
         selectSource: "Select the source from where to start listening ...",
-        size: "Size:{0:trim,leading_space}",
+        size: "Tamanho:{0:trim,leading_space}",
     },
     log: {
-        noFileFound: "No log files found!",
-        selectLogFile: "Select the log file, that should be opened ...",
+        noFileFound: "Nenhum arquivo de 'log' encontrado!",
+        selectLogFile: "Selecione o arquivo de log que deve ser aberto ...",
     },
     maxDepthReached: "Cannot go deeper than{0:trim,leading_space}!",
     network: {
         hostname: 'Your hostname:{0:trim,surround,leading_space}',
         interfaces: {
-            list: 'Your network interfaces:',
+            list: 'Suas interfaces de rede:',
         }
     },
-    no: "No",
-    noFiles: "No files found!",
+    no: "Não",
+    noFiles: "Nenhum arquivo encontrado!",
     notFound: {
         dir: "Directory{0:trim,surround,leading_space} not found!",
     },
     notifications: {
-        defaultName: "Notification #{0:trim}",
-        loading: "Loading notifications ...",
-        noneFound: "No notifications found!",
-        selectNotifications: "Select one or more notifications ...",
+        defaultName: "Notificação #{0:trim}",
+        loading: "Corregando notificações ...",
+        noneFound: "Nenhuma notificação encontrada!",
+        selectNotifications: "Selecione uma ou mais notificações ...",
     },
     ok: 'OK',
     output: {
@@ -387,8 +388,8 @@ export const translation: Translation = {
             invalidDirectory: "{0:trim,surround,ending_space}is an invalid directory!",
         },
         errors: {
-            initializationFailed: "Initialization of plugin{0:trim,surround,leading_space} failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
-            loadingFailed: "Error while loading{0:trim,surround,leading_space} (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            initializationFailed: "Initialization of plugin{0:trim,surround,leading_space} failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
+            loadingFailed: "Error while loading{0:trim,surround,leading_space} (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
             noFactoryFunction: "Plugin module{0:trim,surround,leading_space} contains no factory function!",
             noModule: "Plugin{0:trim,surround,leading_space} contains no module!",
             noneFoundIn: "No plugins found in{0:trim,surround,leading_space}!",
@@ -477,9 +478,9 @@ export const translation: Translation = {
             olderFilesFound: "{0:trim,ending_space}files was/were found, which is/are older. Continue?",
             report: {
                 lastChange: "Last change",
-                localFile: "Local file",
-                remoteFile: "Remote file",
-                size: "Size",
+                localFile: "Arquivo local",
+                remoteFile: "Arquivo remoto",
+                size: "Tamanho",
                 title: "Older files in{0:trim,surround,leading_space}",
             },
         }, 
@@ -504,7 +505,7 @@ export const translation: Translation = {
         errors: {
             invalidWorkspace: "Cannot pull file{0:trim,surround,leading_space} to workspace{1:trim,surround,leading_space}!",
             invalidWorkspaceForPackage: "Cannot pull package{0:trim,surround,leading_space} to workspace{1:trim,surround,leading_space}!",
-            operationFailed: "Pull operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            operationFailed: "Pull operation failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
             operationForSourceFailed: "Pulling file(s) from source{0:trim,surround,leading_space} failed:{1:trim,surround,leading_space}",
         },
         finishedButton: {
@@ -583,7 +584,7 @@ export const translation: Translation = {
     },
     switches: {
         errors: {
-            operationFailed: "Switch operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            operationFailed: "Switch operation failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
         },
     },
     sync: {
@@ -714,7 +715,7 @@ export const translation: Translation = {
             selectTarget: "Select a target ...",
         },
         errors: {
-            operationFailed: "Tool operation failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+            operationFailed: "Tool operation failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
         },
         git: {
             listFileChanges: {
@@ -831,7 +832,7 @@ export const translation: Translation = {
     workspaces: {
         active: {
             errors: {
-                selectWorkspaceFailed: "Selecting active workspace failed (s. debug console 'CTRL/CMD + SHIFT + Y')!",
+                selectWorkspaceFailed: "Selecting active workspace failed (veja o console de depuração 'CTRL/CMD + SHIFT + Y')!",
             },
             noneFound: "No active workspaces found!",
             selectWorkspace: "Select the active workspace ...",
